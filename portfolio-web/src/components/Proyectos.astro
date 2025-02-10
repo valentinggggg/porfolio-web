@@ -1,0 +1,51 @@
+---
+import TiendaOnline from '../assets/img/TiendaOnline.png'
+import ToDo from '../assets/img/TodoList.png'
+import Card from './Cards.astro'
+import CombiAventura from '../assets/img/CombiAventura.png'
+import ReactIcon from '../icons/React.astro'
+import ViteIcon from '../icons/Vite.astro'
+import TailwindIcon from '../icons/Tailwind.astro'
+---
+
+<section class="flex justify-center items-center flex-col mt-28" id="Proyectos" data-aos="fade-right">
+    <div class="md:w-[800px] flex flex-col w-[700px]">
+        <h1 class="text-white font-bold text-2xl mb-5">
+            Mis proyectos
+        </h1>
+        <div class="grid grid-cols-2 md:gap-1 gap-2">
+                <div class="col-span-1">
+                <a href="https://tienda-online-nu.vercel.app/" class="hover:brightness-50"><Card 
+                    src={TiendaOnline.src}
+                    title='Tienda Online'
+                    desc='Tienda completamente responsive, que incluye carrito y resumen de compra.'/></a>
+                </div>
+                    <div class="flex flex-col justify-center md:items-center items-center md:mr-0 mr-16  ml-3 gap-4 col-span-1">
+                        <button class="btn btn-outline text-white w-32 flex font-bold">Vite<ViteIcon class="w-4 h-4"/></button>
+                        <button class="btn btn-outline text-white w-32 flex font-bold">React<ReactIcon class="w-4 h-4"/></button>
+                        <button class="btn btn-outline text-white w-32 flex font-bold">Tailwind<TailwindIcon class="w-4 h-4"/></button>
+                    </div>
+                <div class="flex flex-col justify-center md:items-end items-end mr-3 gap-4 md:col-start-1 ">
+                    <button class="btn btn-outline text-white w-32 flex font-bold">Vite<ViteIcon class="w-4 h-4"/></button>
+                    <button class="btn btn-outline text-white w-32 flex font-bold">React<ReactIcon class="w-4 h-4"/></button>
+                </div>
+                <div class="md:mr-0 md:col-start-2 items-start mr-8">
+                <a href="https://app-listas-tareas.vercel.app/" class="hover:brightness-50"><Card 
+                    src={ToDo.src}
+                    title='ToDo List'
+                    desc='Aplicacion para crear una lista de tareas completamente funcional y con localstorage'/></a>
+                </div>
+                <div>
+                <a href="https://combiaventura.vercel.app/" class="hover:brightness-50"><Card 
+                    src={CombiAventura.src}
+                    title='Combi Aventuras'
+                    desc='Pagina de alquiler y viajes en combis completamente responsive'/></a>
+                </div>
+                    <div class="flex flex-col justify-center md:items-center items-center md:mr-0 mr-16 ml-3 gap-4 col-span-1">
+                        <button class="btn btn-outline text-white w-32 flex font-bold">Vite<ViteIcon class="w-4 h-4"/></button>
+                        <button class="btn btn-outline text-white w-32 flex font-bold">React<ReactIcon class="w-4 h-4"/></button>
+                        <button class="btn btn-outline text-white w-32 flex font-bold">Tailwind<TailwindIcon class="w-4 h-4"/></button>
+                    </div>
+        </div>
+    </div>
+</section>

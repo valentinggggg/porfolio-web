@@ -1,0 +1,28 @@
+---
+import ReactIcon from '../icons/React.astro'
+import ViteIcon from '../icons/Vite.astro'
+import TailwindIcon from '../icons/Tailwind.astro'
+import HTMLIcon from '../icons/Html.astro'
+import CssIcon from '../icons/Css.astro'
+import CmasLIcon from '../icons/Cmas.astro'
+import JavascriptIcon from '../icons/Javascript.astro'
+import AstroIcon from '../icons/Astroicon.astro'
+---
+
+<section class="mt-20 flex flex-col justify-center items-center">
+    <div class="w-[1000px] flex flex-col justify-center items-center border-solid-1 border-blue-200">
+        <h1 class="text-2xl font-bold text-blue-300">Tecnologias que utilizo</h1>
+        <div>
+            <div class="mt-6 mb-12 grid md:grid-cols-8 grid-cols-4 gap-4">
+                <div class="font-bold flex flex-col justify-center items-center border border-gray-500 rounded-lg hover:brightness-200 hover:cursor-pointer p-4 w-24 glass text-white"><ReactIcon class="w-6 h-6"/>React</div>
+                <div class="font-bold flex flex-col justify-center items-center border border-gray-500 rounded-lg hover:brightness-200 hover:cursor-pointer p-4 w-24 glass text-white"><TailwindIcon class="w-6 h-6"/>Tailwind</div>
+                <div class="font-bold flex flex-col justify-center items-center border border-gray-500 rounded-lg hover:brightness-200 hover:cursor-pointer p-4 w-24 glass text-white"><HTMLIcon class="w-6 h-6"/>HTML</div>
+                <div class="font-bold flex flex-col justify-center items-center border border-gray-500 rounded-lg hover:brightness-200 hover:cursor-pointer p-4 w-24 glass text-white"><CssIcon class="w-6 h-6"/>CSS</div>
+                <div class="font-bold flex flex-col justify-center items-center border border-gray-500 rounded-lg hover:brightness-200 hover:cursor-pointer p-4 w-24 glass text-white"><ViteIcon class="w-6 h-6"/>Vite</div>
+                <div class="font-bold flex flex-col justify-center items-center border border-gray-500 rounded-lg hover:brightness-200 hover:cursor-pointer p-4 w-24 glass text-white"><JavascriptIcon class="w-6 h-6"/>JavaScript</div>
+                <div class="font-bold flex flex-col justify-center items-center border border-gray-500 rounded-lg hover:brightness-200 hover:cursor-pointer p-4 w-24 glass text-white"><CmasLIcon class="w-6 h-6"/>C++</div>
+                <div class="font-bold flex flex-col justify-center items-center border border-gray-500 rounded-lg hover:brightness-200 hover:cursor-pointer p-4 w-24 glass text-white"><AstroIcon class="w-8 h-8"/>Astro</div>
+            </div>
+        </div>
+    </div>
+</section>
